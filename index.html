@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Academic Website</title>
+    <!-- Link to external stylesheet -->
+    <link rel="stylesheet" href="style.css">
+    <meta name="description" content="Personal academic website built with a clean, minimal design.">
+</head>
+<body>
+    <!-- Header section with navigation -->
+    <header class="site-header">
+        <div class="container">
+            <div class="logo">
+                <!-- Replace "Your Name" with your actual name -->
+                <h1>Siming Ye</h1>
+            </div>
+            <nav class="site-nav">
+                <ul>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#publications">Publications</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero / About section -->
+    <section id="about" class="hero-section">
+        <div class="container hero-content">
+            <div class="hero-image">
+                <!-- Place your profile picture in the same folder and name it profile.jpg -->
+                <img src="profile.jpg" alt="Profile picture" loading="lazy">
+            </div>
+            <div class="hero-text">
+                <h2>Hello! I'm Siming Ye</h2>
+                <p>
+                    I'm a Ph.D. candidate in Economics at Georgetown University. I work on microeconomic theory, with a focus on decision theory, information, and social choice.
+                </p>
+                <!-- Link to your CV or resume if you have one -->
+                <a href="https://www.dropbox.com/scl/fi/mp2abyic50j0ysnldwz96/SimingYE_Vitae2025.pdf?rlkey=43oimqukosnuvcqc5bwg4ihm0&e=1&dl=0" class="btn" target="_blank">Download CV</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Publications section -->
+    <section id="publications" class="section">
+        <div class="container">
+            <h2>Publications</h2>
+            <div class="publication-list">
+                <!-- Example publication item; duplicate this block for each publication -->
+                <div class="publication-item">
+                    <h3>Haves and have-nots: A theory of economic sufficientarianism</h3>
+                    <p class="authors">with Christopher P. Chambers</p>
+                    <p class="journal">Journal of Economic Theory, 2024</p>
+                    <p class="description">
+                        This paper extends the philosophical concept of sufficientarianism to multi-good allocation problems. We propose that social welfare depends primarily on ensuring sufficient consumption for as many individuals as possible. We introduce and formalize "sufficientarian judgment"—the principle that when equal consumption becomes socially worse by changing one agent's bundle, no other agent's change can improve social welfare. We demonstrate that sufficientarianism is characterized by this principle combined with symmetry and separability, and establish its connection to the leximin criterion.
+                    </p>
+                </div>
+                <!-- Add more publication items as needed -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects / Working Papers section -->
+    <section id="projects" class="section alternate">
+        <div class="container">
+            <h2>Projects & Working Papers</h2>
+            <div class="project-list">
+                <!-- Example project item; duplicate this block for each project or working paper -->
+                <div class="project-item">
+                    <h3>Aspiration-Weighted Luce Model</h3>
+                    <p>
+                        Working paper on behavioral choice modeling incorporating aspirational considerations.
+                    </p>
+                </div>
+                <div class="project-item">
+                    <h3>Household Labor Supply and the Impact of Social Securities in Couples' Retirement Decisions</h3>
+                    <p>
+                        with Lanfeng Li - Research examining how social security policies affect retirement timing decisions in dual-earner households.
+                    </p>
+                </div>
+                <div class="project-item">
+                    <h3>Information Acquisition in Contests with Conditional Investments</h3>
+                    <p>
+                        with Zhuoqiong Chen and Jie Zheng - Work in progress analyzing strategic information gathering in competitive environments.
+                    </p>
+                </div>
+                <!-- Add more project items as needed -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact section -->
+    <section id="contact" class="section">
+        <div class="container">
+            <h2>Contact</h2>
+            <p>Feel free to reach out for questions or collaboration opportunities!</p>
+            <p>Email: <a href="mailto:sy677@georgetown.edu">sy677@georgetown.edu</a></p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="container">
+            <p>&copy; <span id="currentYear"></span> Siming Ye. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Automatically insert the current year in the footer
+        document.getElementById('currentYear').textContent = new Date().getFullYear();
+    </script>
+</body>
+</html>
