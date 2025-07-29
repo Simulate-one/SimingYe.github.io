@@ -74,13 +74,22 @@
                     <h3>Aspiration-Weighted Luce Model</h3>
                     <p>
                         Working paper on behavioral choice modeling incorporating aspirational considerations.
+                        <button class="abstract-toggle" onclick="toggleAbstract('abstract1')">Show Abstract</button>
                     </p>
+                    <div id="abstract1" class="abstract-content" style="display: none;">
+                        <p><strong>Abstract:</strong> I develop a stochastic choice framework extending the Luce (1959) model to analyze how individuals are influenced by aspirational figures who have access to broader choice sets. The Aspiration-Weighted Luce Model (AWLM) incorporates this influence through a linear combination of the influencer's Luce weights in the broader set and that of the decision maker's in her feasible set. My comparative static results reveal a key "dampening effect" - when the influencer places greater probability weight on options unavailable to the decision maker, the overall impact on consumers' choices among available alternatives is reduced. I provide a characterization of the model through proportional-difference conditions and establish the identification of both influence strength and baseline preferences from choice data, enabling empirical testing of aspiration-based choice behavior.</p>
+                    </div>
                 </div>
                 <div class="project-item">
                     <h3>Household Labor Supply and the Impact of Social Securities in Couples' Retirement Decisions</h3>
                     <p>
                         with Lanfeng Li - Research examining how social security policies affect retirement timing decisions in dual-earner households.
+                        <button class="abstract-toggle" onclick="toggleAbstract('abstract2')">Show Abstract</button>
+                        <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4990244" target="_blank" class="paper-link">SSRN Link</a>
                     </p>
+                    <div id="abstract2" class="abstract-content" style="display: none;">
+                        <p><strong>Abstract:</strong> We examine how couples respond to pension eligibility in developing countries by focusing on the rural Chinese pension system. Using data from the China Health and Retirement Longitudinal Study, we employ a double regression discontinuity design to capture the sharp changes in eligibility at age 60. Our findings reveal a striking pattern that contrasts with developed nations: women increase their labor force participation when their husbands become pension-eligible, while men decrease their participation when their wives reach eligibility age. To explain these asymmetric responses, we extend collective household models to incorporate three key mechanisms: income effects from pension receipt, intra-household labor substitution, and age-based constraints on market access. The evidence supports an Added Worker Effect that persists even after spouses reach pension eligibility. We believe this brings policy insights into pension systems in developing countries with weak social safety nets.</p>
+                    </div>
                 </div>
                 <div class="project-item">
                     <h3>Information Acquisition in Contests with Conditional Investments</h3>
@@ -112,6 +121,20 @@
     <script>
         // Automatically insert the current year in the footer
         document.getElementById('currentYear').textContent = new Date().getFullYear();
+
+        function toggleAbstract(id) {
+            const abstractContent = document.getElementById(id);
+            const button = event.target;
+            if (abstractContent) {
+                if (abstractContent.style.display === 'none') {
+                    abstractContent.style.display = 'block';
+                    button.textContent = 'Hide Abstract';
+                } else {
+                    abstractContent.style.display = 'none';
+                    button.textContent = 'Show Abstract';
+                }
+            }
+        }
     </script>
 </body>
 </html>
